@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+    <script src="index.js" defer></script>
+<link rel="stylesheet" href="index.css" >
+    <!-- <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Fizz Buzz</h1>
+    <p>Enter the length of the array to iterate through</p>
+    <p>Enter the numbers you want to show for "Fizz", "Buzz", and "FizzBuzz"</p>
+<section>
+<label>Array start number = 1</label>
+<input id="snumber"  type="number" name="snumber" value="0" >
+
+
+<br>
+<br>
+<label>Array end number = 100</label>
+<input type="number" id="enumber" name="enumber" >
+
+<br>
+<br>
+<label>Number for Fizz = 3</label>
+<input type="number" id="fnumber" name="fnumber" >
+<br>
+<br>
+<label>Number for Buzz = 5</label>
+<input type="number" id="bnumber" name="bnumber" >
+<br>
+<br>
+<label>Number for FizzBuzz = 3 & 5</label>
+<input type="number"  id="fbnumber"  name="fbnumber" >
+<br>
+<br>
+<button id="submit" type="submit" value="Submit" onclick="" > Submit </button>
+</section>
+
+<section>
+    <h2>Fizz</h2>
+    <div class="grid-container"
+    id="fizzDiv">
+
+    </div>
+
+    <h2>Buzz</h2>
+    <div class="grid-container"
+    id="buzzDiv">
+
+    </div>
+
+    <h2>FizzBuzz</h2>
+    <div class="grid-container"
+    id="fizzbuzzDiv">
+
+    </div>
+
+
+
+
+</section>
+</body>
+</html>

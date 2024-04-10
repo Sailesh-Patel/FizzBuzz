@@ -1,0 +1,40 @@
+.container {
+    padding: 10px;
+    width: 300px;
+    display: inline-block;
+}
+
+.array {
+    padding: 10px;
+    width: 300px;
+    display: inline-block;
+    border: 0.5px;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: black;
+    margin: 0.5%;
+}
+
+.fb_selectors {
+    padding: 10px;
+    width: 300px;
+    display: inline-block;
+    border: 0.5px;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: black;
+    margin: 0.5%;
+}
+
+.generate {
+    padding: 10px;
+    width: 72%;
+    border: 0.5px;
+    border-style: solid;
+    border-color: black;
+    margin: 0.5%;
+}
+
+.generate_button {
+    padding-left: 10px;
+}
