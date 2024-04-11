@@ -109,7 +109,7 @@ for (let row = 0; row < rows; row++) {
 <container>
 
 <section className="array">
-<h3> Array Start</h3>
+<h3> Range Start</h3>
 <p>Enter the starting point of your array</p>
       <input type="number" id="arrays" readOnly value ={countstart}/>
         <br />
@@ -123,7 +123,7 @@ for (let row = 0; row < rows; row++) {
 </section>
 
 <section className="array">
-<h3> Array End</h3>
+<h3> Range End</h3>
 <p>Enter the end point of your array</p>
       <input type="number" id="arraye" readOnly value ={countend}/>
         <br />

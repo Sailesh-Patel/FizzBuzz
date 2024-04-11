@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Link, NavLink, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './Navbar.css';
 
 import Calculator from '../Pages/Calculator';
@@ -11,26 +11,29 @@ import Home from '../Pages/Home';
 
 function Navbar() {
 
+    const [menuOpen, setMenuOpen] = useState(false);
 
-        let path = window.location.pathname
-    if (window.location.pathname === '/') {
-        console.log("Home Page");
-    }
-    else if (window.location.pathname === '/Calculator') {
-        console.log("Calc Page");
-    }
-    else if (window.location.pathname === '/About') {
-        console.log("About Page");
-    }
-    else if (window.location.pathname === '/Approach') {
-        console.log("Approach Page");
-    }
-    else  {
-        console.log("Unknown Page");
-    }
 
-// className="active"
-// ? "active" : ""
+
+    //     let path = window.location.pathname
+    // if (window.location.pathname === '/') {
+    //     console.log("Home Page");
+    // }
+    // else if (window.location.pathname === '/Calculator') {
+    //     console.log("Calc Page");
+    // }
+    // else if (window.location.pathname === '/About') {
+    //     console.log("About Page");
+    // }
+    // else if (window.location.pathname === '/Approach') {
+    //     console.log("Approach Page");
+    // }
+    // else  {
+    //     console.log("Unknown Page");
+    // }
+
+    // className="active"
+    // ? "active" : ""
 
     return (
 
@@ -39,18 +42,22 @@ function Navbar() {
             <Router>
                 <nav className="nav">
                     <Link to='/' className="site-title">Fizz Buzz</Link>
-
-                    <ul>
+                    <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul className={menuOpen ? "open" : ""}>
                         <li>
-                            <Link to='Calculator'>Calculator</Link>
+                            <NavLink to='Calculator'>Calculator</NavLink>
                         </li>
 
                         <li>
-                            <Link to='About'>About</Link>
+                            <NavLink to='About'>About</NavLink>
                         </li>
 
                         <li>
-                            <Link to='Approach'>Approach</Link>
+                            <NavLink to='Approach'>Approach</NavLink>
                         </li>
                     </ul>
 
