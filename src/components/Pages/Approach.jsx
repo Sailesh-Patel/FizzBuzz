@@ -64,9 +64,11 @@ function Approach() {
       <h1 className='page-title'>Approach to Fizz Buzz</h1>
       <br></br>
 
+<div className="containers">
+  <h3>for numbers 1 to 100 run them through fizzbuzz</h3>
       <section className="section">
-        <h3>for numbers 1 to 100 run them through fizzbuzz</h3>
-        <p>
+        
+        <div>
 
           {/* <pre>
             <code>{jsCode1}</code>
@@ -79,13 +81,37 @@ function Approach() {
             {jsCode1}
           </SyntaxHighlighter>
 
-        </p>
+        </div>
       </section>
 
-      <br></br>
-      <section className="section">
-        <h3>create an array of numbers and loop through array fizzbuzz</h3>
+<section className="section-approach">
+
+<h4>Approach</h4>
         <p>
+1. Select a range to iterate through to create a 'For loop' <br></br>
+2. Where variable i equals n, increase by 1, untill i is less than n,  <br></br>
+3. First look for the two numbers which are modulas together and euqal 0, which is your 'FizzBuzz' <br></br>
+4. 'If' i is modular by 5 and equals 0 and i is modular by 3 and equals 0 = FizzBuzz <br></br>
+5. We can print this to the console with console.log (""); <br></br>
+6. Now add in your 'else if' for each number<br></br>
+7. 'Else if' i is modular by 5 and equals 0 = run code to print Buzz<br></br>
+8. 'Else if' i is modular by 3 and equals 0 = run code to print Fizz<br></br>
+9. Now look at the 'Else' where the value is not modulas by the numbers asked for<br></br>
+10. 'Else' log each iterate of the number<br></br>
+        </p>
+
+</section>
+
+</div>
+
+
+      <br></br>
+
+      <div className="containers">
+            <h3>create an array of numbers and loop through array fizzbuzz</h3>
+      <section className="section">
+    
+        <div>
 
 
 
@@ -97,13 +123,34 @@ function Approach() {
             {jsCode2}
           </SyntaxHighlighter>
 
-        </p>
+        </div>
       </section>
 
+      <section className="section-approach">
+  <h4>Approach</h4>
+<p>
+1. Create an array to iterate through with a 'For loop<br></br>
+2. Where i equals n, increase by 1, untill i is less than the array length, <br></br>
+3. First look for the two numbers which are modulas together and euqal 0, which is your 'FizzBuzz' <br></br>
+4. 'If' array i is modular by 5 and equals 0 and array i is modular by 3 and equals 0 = FizzBuzz <br></br>
+5. Now add in your 'else if' for each number<br></br>
+6. 'Else if' array i is modular by 5 and equals 0 = Buzz<br></br>
+7. 'Else if' array i is modular by 3 and equals 0 = Fizz<br></br>
+8. Now look at the 'Else' where the value is not modulas by the numbers asked for<br></br>
+9. 'Else' log each array iterate of the number at each point in the array<br></br>
+
+</p>
+</section>
+
+</div>
+
       <br></br>
+      
+      <div className="containers">     
+      <h3>A simpler solution</h3>
       <section className="section">
-        <h3>A simpler solution</h3>
-        <p>
+   
+        <div>
 
           {/* <pre>
             <code>{jsCode3}</code>
@@ -113,8 +160,31 @@ function Approach() {
             {jsCode3}
           </SyntaxHighlighter>
 
-        </p>
+        </div>
       </section>
+
+      <section className="section-approach">
+      <h4>Approach</h4>
+<p>
+1. Select a range to iterate through to create a 'For loop' <br></br>
+2. Where variable i equals n, increase by 1, untill i is less than n,<br></br>
+3. Set a variable output which is an empty string (blank text)<br></br>
+4. Each line is an 'IF' <br></br>
+5. 'if' i is modular by 3 and equals 0 = output eqauls Fizz (add Fizz to the line of text)<br></br>
+6. 'if' i is modular by 5 and equals 0 = output eqauls Buzz (add Buzz to the line of text)<br></br>
+7. Now test the string of text under output <br></br>
+8. 'if' each iterate output its empty (non of the tests were true) = output equals the iterative number<br></br>
+9. Now you print the output<br></br>
+10. console.log(output)<br></br>
+
+</p>
+
+</section>
+</div>
+
+<br></br>
+
+
 
     </div>
   )
